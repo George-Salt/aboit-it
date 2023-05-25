@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+body {
+  width: 98.7vw;
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+}
+
+.hr-line {
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 3px solid #333;
+}
+
+.section {
+  text-align: center;
+}
+
+.section h1 {
+  margin-top: 50px;
+}
+
+.langs-section .langs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 450px;
+}
+
+.langs .lang {
+  width: 300px;
+  height: 340px;
+  border: 3px black solid;
+  border-radius: 40px;
+  z-index: 2;
+  text-align: center;
+}
+
+.lang .img {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-size: cover;
+  display: block;
+}
+
+.lang .text {
+  display: none;
+}
+
+.lang:hover {
+  cursor: pointer;
+}
+
+.lang:hover .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.lang:hover .img {
+  display: none;
+}
+
+.lang .name {
+  margin-top: 5px;
+}
+
+.python .img {
+  background-image: url("imgs/python.png");
+}
+
+.java .img {
+  background-image: url("imgs/java.png");
+}
+
+.cpp .img {
+  background-image: url("imgs/cpp.png");
+}
+
+.hr-inclined-line {
+  margin: 25px 0 40px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 3px solid #000;
+  transform:rotate(2deg);
+}
+
+.hr-shadow {
+  margin: -30px auto 10px;
+  padding: 0;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  box-shadow: 0 20px 20px -20px #000000;
+}
+
+.persons-section .persons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+}
+
+.persons-table {
+  border: 3px #000000 solid;
+}
+
+.persons-table tr td {
+  width: 250px;
+  height: 250px;
+  color: white;
+  font-size: 20px;
+}
+
+td.linus-img {
+  background-image: url("imgs/linus-torvalds.png");
+  background-size: cover;
+}
+
+td.linus-info:hover::after {
+  content: ": в 1991 году создал операционную систему Linux.";
+}
+
+td.geits-img {
+  background-image: url("imgs/bill-geits.png");
+  background-size: cover;
+}
+
+td.geits-info:hover::after {
+  content: ": в 1975 году основал компанию Microsoft.";
+}
+
+td.kernigan-img {
+  background-image: url("imgs/brain-kernigan.png");
+  background-size: cover;
+}
+
+td.kernigan-info:hover::after {
+  content: ": в 1970 году создал операционную систему Unix.";
+}
+
+td.rossum-img {
+  background-image: url("imgs/gvido-van-rossum.png");
+  background-size: cover;
+}
+
+td.rossum-info:hover::after {
+  content: ": в 1989 году создал объектно-ориентированный язык Python.";
+}
+
+td.person-info {
+  background-color: #000000;
+}
